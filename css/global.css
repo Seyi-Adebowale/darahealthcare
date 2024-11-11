@@ -104,6 +104,9 @@
     display: none !important;
   }
   @media (max-width: 900px) {
+    .header{
+        padding: 10px 20px;
+    }
     nav {
       position: absolute;
       z-index: 99;

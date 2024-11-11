@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  min-height: 90vh;
+  min-height: 88vh;
   background-image: url('/img/IANS_domcare_hero_layered_v2-2.png');
   background-size: cover;
   background-position: center;
@@ -149,6 +149,7 @@
   font-size: 1em;
   line-height: 1.6;
   margin: 10px 0;
+  text-align: justify;
 }
 
 /* Steps Section */
@@ -159,6 +160,7 @@
   padding: 40px 20px;
   background-color: #ffffff;
   width: 100%;
+  gap: 20px;
 }
 
 .steps-section .step {
@@ -191,6 +193,7 @@
   font-size: 1em;
   color: var(--black-color);
   line-height: 1.7;
+  text-align: justify;
 }
 
 /* Responsive Design */
@@ -255,6 +258,7 @@
   font-size: 16px;
   color: #273A79;
   line-height: 1.7;
+  text-align: justify;
 }
 
 /* Responsive Design */
