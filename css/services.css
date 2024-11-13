@@ -1,0 +1,117 @@
+@import 'global.css';
+
+.services-section{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 0;
+}
+.services-section h4 {
+    margin: 15px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+.service-title {
+    position: relative;
+    width: 100%;
+    background-color: #666;
+    color: white;
+    text-align: left;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-item button{
+    font-family: inherit;
+}
+.service-title:hover {
+    background-color: #555;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.service-details {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+.service-details.show {
+    display: flex; /* Show as flex when visible */
+}
+
+.service-icon{
+    width: 25%;
+    height: max-content;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.35);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-icon i{
+    font-size: 40px;
+    text-align: center;
+    background-color: var(--purple-color);
+    color: #fff;
+    padding: 30px;
+    border-radius: 50%;
+    margin: auto;
+}
+.service-icon span{
+    font-size: 16px;
+}
+.service-info{
+    width: 70%;
+}
+.service-details img {
+    width: 100px;
+    height: 100px;
+}
+
+.service-info h3 {
+    color: var(--purple-color);
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.service-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+}
+@media (max-width: 640px){
+    .service-details{
+        flex-direction: column;
+    }
+    .service-icon, .service-info{
+        width: 95%;
+        margin: auto;
+    }
+}
+.show {
+    display: block;
+}

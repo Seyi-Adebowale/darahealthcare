@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/services.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6b219ab309.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dara Healthcare Services: Services</title>
+  </head>
+  <body>
+    <div class="header-container"></div>
+
+    <div class="sub-header service-header">
+      <h3 class="centralize">Our Services:<br><br>Compassionate Care, Expert Support</h3>
+    </div>
+
+    <div class="services-section">
+      <h4>
+        We provide flexible complex care services designed to meet your unique
+        needs, whether at home or in a specialized setting. Our experienced team
+        offers a range of short-term and long-term care options, including
+        support for mental health challenges and complex care requirements. Your
+        well-being is our priority.
+
+        <br />
+<br>
+        <strong>Our Core Services:</strong><br />
+      </h4>
+
+      <div class="service-item">
+        <button class="service-title" onclick="toggleDetails('service1', this)">
+          Personalized Care: Tailored to Your Needs
+          <span class="arrow">&#9660;</span>
+        </button>
+        <div id="service1" class="service-details">
+          <div class="service-icon">
+            <i class="fas fa-hands-helping"></i>
+
+            <span>Personalized Care</span>
+          </div>
+          <div class="service-info">
+            <p>
+              Dara Healthcare Services understands that everyone's needs are
+              unique. That's why we offer personalized care plans designed to
+              meet your specific requirements. Our dedicated team works closely
+              with you to create a customized care plan that addresses your
+              individual needs, preferences, and lifestyle.<br><br>
+            </p>
+            <h3>What does personalized care mean?</h3>
+            <p>
+              Individualized Assessments: We conduct thorough assessments to
+              understand your unique needs, strengths, and challenges. <br /><br>
+              Tailored Care Plans: We develop customized care plans that address
+              your specific health and social care needs.<br /><br>
+              Flexible Support: Our services are flexible and adaptable to your
+              changing needs and circumstances.<br /><br>
+              Choice and Control: You have the freedom to make choices about
+              your care and the services you receive.<br /><br>
+              Person-Centered Approach: We focus on your well-being and strive
+              to enhance your quality of life.<br><br>
+
+            </p>
+            <h3>Benefits of Personalized Care</h3>
+            <p>
+              Improved Quality of Life: Tailored care can enhance your overall
+              well-being.<br /><br>
+              Increased Independence: Personalized support can help you maintain
+              independence and self-sufficiency.<br /><br>
+              Reduced Stress: Knowing that your needs are being met can reduce
+              stress and anxiety.<br /><br>
+              Enhanced Satisfaction: A personalized approach can lead to greater
+              satisfaction with your care.<br /><br>
+              By choosing Dara Healthcare Services, you're choosing a partner
+              committed to providing exceptional, personalized care.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <button class="service-title" onclick="toggleDetails('service2', this)">
+          Home Care: Comfort and Care in Your Own Space
+          <span class="arrow">&#9660;</span>
+        </button>
+        <div id="service2" class="service-details">
+          <div class="service-icon">
+            <i class="fas fa-house-user"></i>
+            <span> Home Care</span>
+          </div>
+          <div class="service-info">
+            <p>
+              Dara Healthcare Services offers compassionate and professional
+              home care services designed to support individuals with learning
+              disabilities or complex needs. Our dedicated team of caregivers
+              provides personalized assistance in the comfort of your own home.<br><br>
+            </p>
+            <h3>What does home care involve?</h3>
+            <p>
+              Daily Living Activities: Assistance with activities of daily
+              living, such as bathing, dressing, and grooming.<br /><br>
+              Medication Administration: Safe and accurate administration of
+              prescribed medications.<br /><br>
+              Meal Preparation and Feeding: Preparation of nutritious meals and
+              assistance with feeding, if needed.<br /><br>
+              Light Housekeeping: Maintaining a clean and safe living
+              environment.<br /><br>
+              Companionship: Providing social interaction and emotional
+              support.<br /><br>
+              Respite Care: Temporary relief for family caregivers.<br><br>
+            </p>
+            <h3>Why choose home care?</h3>
+            <p>
+              Enhanced Quality of Life: Receive care in the familiar
+              surroundings of your own home.<br /><br>
+              Increased Independence: Maintain independence and dignity with
+              personalized support.<br /><br>
+              Peace of Mind for Families: Know that your loved one is receiving
+              quality care.<br /><br>
+              Reduced Stress: Alleviate the burden of caregiving and enjoy more
+              free time.<br /><br>
+              Dara Healthcare Services is committed to providing the highest
+              quality home care services. Our caregivers are trained and
+              experienced in handling a wide range of complex needs. We strive
+              to create a supportive and nurturing environment where individuals
+              can thrive.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-container"></div>
+
+    <script src="script.js"></script>
+    <script>
+      function toggleDetails(id, element) {
+        // Get all service detail elements
+        const allServiceDetails = document.querySelectorAll(".service-details");
+
+        // Close all service details except the one being toggled
+        allServiceDetails.forEach((service) => {
+          if (service.id !== id) {
+            service.classList.remove("show");
+            const arrow =
+              service.previousElementSibling.querySelector(".arrow");
+            arrow.classList.remove("rotate");
+          }
+        });
+
+        // Toggle the clicked service detail
+        var content = document.getElementById(id);
+        content.classList.toggle("show");
+
+        // Rotate the arrow
+        var arrow = element.querySelector(".arrow");
+        arrow.classList.toggle("rotate");
+      }
+    </script>
+  </body>
+</html>

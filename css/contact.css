@@ -1,0 +1,142 @@
+@import 'global.css';
+
+.consultation-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: 
+      url('../img/image2-1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .form-content {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 2rem;
+    border-radius: 8px;
+    width: max-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .form-content h2 {
+    font-size: 1.5rem;
+    color: var(--black-color);
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  .form-content h2 span {
+    color: var(--purple-color);
+  }
+  
+  .form-content p {
+    margin-bottom: 1.5rem;
+    color: #666;
+  }
+  
+  .responsive-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-group input::placeholder {
+    color: #aaa;
+  }
+  
+  @media (max-width: 768px) {
+    .form-row {
+      flex-direction: column;
+    }
+  }
+  .consultation-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 2rem;
+    background-color: #f9faff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    margin: auto;
+  }
+  
+  .consultation-text {
+    width: max-content;
+    margin: auto;
+
+  }
+  
+  .consultation-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--black-color);
+  }
+  
+  .consultation-text .highlight {
+    color: var(--purple-color);
+  }
+  
+  .consultation-text p {
+    color: #4a4a4a;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .consultation-contact {
+    background-color: #f1f5fc;
+    padding: 2rem;
+    border-radius: 8px;
+    width: max-content;
+    margin: auto;
+  }
+  
+  .consultation-contact h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #1f2d50;
+  }
+  
+  .consultation-contact p {
+    color: #4a4a4a;
+    line-height: 1.5;
+    font-size: 18px;
+  }
+  
+  .consultation-contact strong {
+    font-size: 1.4rem;
+    color: var(--black-color);
+  }
+  

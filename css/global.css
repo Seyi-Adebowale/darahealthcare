@@ -16,13 +16,16 @@
   a:link {
     text-decoration: none;
   }
+  
   header {
-    z-index: 99;
+    z-index: 9999;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 40px;
+    padding: 10px 30px;
     width: 100%;
+    border-bottom: 1px solid #f0eded;
   }
   .navbar {
     display: flex;
@@ -40,16 +43,21 @@
     margin: auto;
   }
   .logo {
-    width: 10%;
+    width: 20%;
     text-align: left;
     display: flex;
     align-items: center;
     margin: auto;
     padding: 0px;
+    gap: 10px;
   }
   .logo img {
     width: 80px;
     height: 60px;
+  }
+  .logo p{
+    color: var(--purple-color);
+    font-weight: bold;
   }
   nav ul {
     list-style: none;
@@ -105,7 +113,7 @@
   }
   @media (max-width: 900px) {
     .header{
-        padding: 10px 20px;
+        padding: 10px 0px;
     }
     nav {
       position: absolute;
@@ -143,6 +151,9 @@
       padding: 10px;
       text-align: center;
     }
+    nav ul li a{
+      font-size: 18px;
+    }
     .book-button {
       width: max-content;
       margin: auto;
@@ -174,7 +185,7 @@
   .footer {
     background-color: #f1f1f1;
     padding: 20px 60px;
-    font-size: 0.9em;
+    font-size: 16px;
     color: #666;
     display: flex;
     flex-direction: column;
@@ -322,3 +333,28 @@
       margin: 20px auto 10px;
     }
   }
+  .sub-header {
+    background-color: #666;
+    height: 100px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit-btn {
+  background-color: var(--purple-color); 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: auto; 
+  display: block;
+  margin: 20px auto; 
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.submit-btn:hover {
+  background-color: #5a005a;
+}
