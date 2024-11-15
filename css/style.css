@@ -603,10 +603,7 @@ a {
 }
 
 .consultation-text {
-  /* margin: auto; */
-  /* width: 100px; */
-  max-width: 600px;
-
+   width: 50%;
 }
 
 .consultation-text h2 {
@@ -633,19 +630,16 @@ a {
 .responsive-form {
   display: flex;
   flex-direction: column;
-  min-width: 320px;
+  width: 40%;
 }
 
 .form-row {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
-  max-width: 320px;
 }
 
 .form-group {
-  /* flex: 1; */
-  max-width: 320px;
   display: flex;
   flex-direction: column;
 }
@@ -665,12 +659,23 @@ a {
   margin-bottom: 10px;
   width: 100%;
 }
-
+.form-group select{
+  background-color: #fff;
+}
 .form-group input::placeholder {
   color: #aaa;
 }
 
 @media (max-width: 768px) {
+  .consultation-info{
+    flex-direction: column;
+  }
+  .consultation-text{
+    width: 100%;
+  }
+  .responsive-form{
+    width: 100%;
+  }
   .form-row {
     flex-direction: column;
   }
