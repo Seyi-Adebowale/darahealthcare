@@ -2,6 +2,8 @@
 :root {
     --purple-color: #670076;
     --black-color: #333333;
+    --light-purple: #c58bf2;
+    --dark-purple: #41014b;
   }
   * {
     box-sizing: border-box;
