@@ -7,7 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/schedule.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/6b219ab309.js"
       crossorigin="anonymous"
@@ -17,71 +20,118 @@
   <body>
     <div class="header-container"></div>
 
-    <div class="sub-header service-header">
-      <h3 class="centralize">Schedule a Consultation</h3>
-    </div>
+    <main>
+      <div class="sub-header service-header">
+        <h3 class="centralize">Schedule a Consultation</h3>
+      </div>
 
-    <div class="container">
+      <div class="container">
         <form class="responsive-form">
-            <!-- Personal Information -->
-            <div class="form-group">
-              <label for="firstName">First Name</label>
-              <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required />
-            </div>
-            <div class="form-group">
-              <label for="lastName">Last Name</label>
-              <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="Enter your email" required />
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
-            </div>
-          
-            <!-- Consultation Details -->
-            <div class="form-group">
-              <label for="preferredDate">Preferred Date for Consultation</label>
-              <input type="date" id="preferredDate" name="preferredDate" required />
-            </div>
-            <div class="form-group">
-              <label for="preferredTime">Preferred Time</label>
-              <input type="time" id="preferredTime" name="preferredTime" required />
-            </div>
-            
-            <div class="form-group">
-              <label for="consultationType">Type of Consultation</label>
-              <select id="consultationType" name="consultationType" required>
-                <option value="" disabled selected>Select a service</option>
-                <option value="" disabled selected>Please Select</option>
-                <option value="hourly-care">Hourly Care</option>
-                <option value="visiting-care">Visiting Care</option>
-                <option value="live-in-care">Live-in Care</option>
-                <option value="supported-living-care">Supported Living Care</option>
-                <option value="all">All of the above</option>
-              </select>
-            </div>
-          
-            <!-- Additional Information -->
-            <div class="form-group">
-              <label for="situation">Briefly Describe Your Needs</label>
-              <textarea id="situation" name="situation" rows="4" placeholder="Provide any specific details..." required></textarea>
-            </div>
-          
-            <!-- Consent -->
-            <div class="form-group checkbox-group">
-              <input type="checkbox" id="consent" name="consent" required />
-              <label for="consent">I consent to being contacted regarding my consultation request.</label>
-            </div>
-          
-            <!-- Submit Button -->
-            <button type="submit" class="submit-btn">Schedule Consultation</button>
-          </form>
-          
-          
-    </div>
+          <!-- Personal Information -->
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Enter your first name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Enter your last name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+
+          <!-- Consultation Details -->
+          <div class="form-group">
+            <label for="preferredDate">Preferred Date for Consultation</label>
+            <input
+              type="date"
+              id="preferredDate"
+              name="preferredDate"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="preferredTime">Preferred Time</label>
+            <input
+              type="time"
+              id="preferredTime"
+              name="preferredTime"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="consultationType">Type of Consultation</label>
+            <select id="consultationType" name="consultationType" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="" disabled selected>Please Select</option>
+              <option value="hourly-care">Hourly Care</option>
+              <option value="visiting-care">Visiting Care</option>
+              <option value="live-in-care">Live-in Care</option>
+              <option value="supported-living-care">
+                Supported Living Care
+              </option>
+              <option value="all">All of the above</option>
+            </select>
+          </div>
+
+          <!-- Additional Information -->
+          <div class="form-group">
+            <label for="situation">Briefly Describe Your Needs</label>
+            <textarea
+              id="situation"
+              name="situation"
+              rows="4"
+              placeholder="Provide any specific details..."
+              required
+            ></textarea>
+          </div>
+
+          <!-- Consent -->
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="consent" name="consent" required />
+            <label for="consent"
+              >I consent to being contacted regarding my consultation
+              request.</label
+            >
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="submit-btn">
+            Schedule Consultation
+          </button>
+        </form>
+      </div>
+    </main>
 
     <div class="footer-container"></div>
 
