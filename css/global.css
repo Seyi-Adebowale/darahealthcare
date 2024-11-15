@@ -11,7 +11,7 @@
     padding: 0;
   }
   body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Inter", sans-serif;
   }
   a,
   a:active,
@@ -25,9 +25,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 30px;
+    padding: 10px 8%;
     width: 100%;
     border-bottom: 1px solid #f0eded;
+    position: fixed;
+  top: 0;
+  left: 0;
+    
+  }
+  header.scrolled{
+    background-color: #e4ccf7;
   }
   .navbar {
     display: flex;
@@ -60,6 +67,7 @@
   .logo p{
     color: var(--purple-color);
     font-weight: bold;
+    font-size: 14px;
   }
   nav ul {
     list-style: none;
@@ -78,7 +86,7 @@
   nav ul li a {
     text-decoration: none;
     color: var(--purple-color);
-    font-size: 14px;
+    font-size: 13px;
   }
   nav ul li a:hover,
   #navlinks ul li a.selected {
@@ -115,7 +123,7 @@
   }
   @media (max-width: 900px) {
     .header{
-        padding: 10px 0px;
+        padding: 10px 0%;
     }
     nav {
       position: absolute;
@@ -186,7 +194,7 @@
 
   .footer {
     background-color: #f1f1f1;
-    padding: 20px 60px;
+    padding: 20px 8%;
     font-size: 16px;
     color: #666;
     display: flex;
@@ -359,4 +367,7 @@
 
 .submit-btn:hover {
   background-color: #5a005a;
+}
+main{
+  margin-top: 80px;
 }

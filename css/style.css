@@ -3,7 +3,7 @@
 .main-content {
   display: flex;
   flex-direction: column;
-  padding: 50px 60px;
+  padding: 60px 8%;
   background-image: url("../img/violet-watercolor-texture-background_1083-172.jpg");
 }
 .hero {
@@ -242,11 +242,13 @@ a {
 /* Features Section */
 .features-section {
   display: flex;
-  justify-content: center;
-  padding: 50px 20px;
+  justify-content: space-around;
+  padding: 50px 8%;
   background-color: #f8f9fa;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 30px;
+  align-items: center;
+  margin: auto;
 }
 
 .feature-item {
@@ -255,14 +257,14 @@ a {
 }
 
 .feature-item i {
-  font-size: 50px;
+  font-size: 60px;
   color: var(--light-purple);
   margin-bottom: 15px;
 }
 
 .feature-item h3 {
   color: #333;
-  font-size: 1.2rem;
+  font-size: 16px;
   font-weight: bold;
   line-height: 1.4;
 }
@@ -280,7 +282,7 @@ a {
   margin: -10px auto 0;
   background-color: #ffe6e6;
   color: #333366;
-  font-size: 1.2em;
+  font-size: 24px;
   font-weight: bold;
   position: relative;
   overflow: hidden;
@@ -288,10 +290,10 @@ a {
 }
 
 .wave-text p {
-  max-width: 1100px;
+  padding: 0 8%;
   width: 95%;
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.6;
   text-align: justify;
 }
@@ -306,10 +308,8 @@ a {
 /* Welcome Section */
 .welcome-section {
   text-align: center;
-  padding: 40px 20px;
+  padding: 40px 8%;
   color: #333366;
-  width: 95%;
-  max-width: 1000px;
   margin: auto;
 }
 
@@ -327,14 +327,17 @@ a {
 }
 
 /* Steps Section */
+.steps-section{
+  margin-top: 50px;
+}
 .steps-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
+  justify-content: space-around;
+  padding: 20px 8%;
   background-color: #ffffff;
   width: 100%;
-  gap: 60px;
+  /* gap: 60px; */
   /* margin-bottom: 40px; */
 }
 
@@ -407,10 +410,8 @@ a {
 /* Mission Section */
 .mission-section {
   text-align: center;
-  padding: 60px 20px;
+  padding: 60px 8%;
   color: var(--black-color);
-  width: 85%;
-  max-width: 1200px;
   margin: auto;
 }
 
@@ -434,10 +435,10 @@ a {
 .mission-cards .card {
   background-color: rgba(255, 212, 224, 0.2);
   border-radius: 10px;
-  padding: 50px 35px;
-  max-width: 350px;
+  padding: 50px 25px;
+  max-width: 300px;
   text-align: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .mission-cards .card h3 {
@@ -450,7 +451,7 @@ a {
   font-size: 14px;
   color: #273A79;
   line-height: 1.7;
-  text-align: justify;
+  text-align: center;
   margin-top: 20px;
 }
 
@@ -477,30 +478,47 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
-  padding: 20px 40px;
-}
-.personalized-img img{
+  padding: 40px 8%;
   width: 100%;
-  max-width: 500px;
-  height: auto;
+  background-color: #f9faff;
+}
+.personalized-img{
+  background-image: url("../img/image2-1-1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  height: 400px;
   border-radius: 50%;
   border: 6px solid var(--dark-purple);
   object-fit: cover;
 }
 .personalized-text{
-  width: 90%;
-  max-width: 600px;
-  margin: auto;
-  
+  /* width: 90%; */
+  width: 42%;
+  margin: auto; 
+}
+@media(max-width: 768px){
+  .personalized-section{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .personalized-img {
+    max-height: 300px;
+    width: 100%;
+  }
+  .personalized-text{
+    width: 100%;
+  }
 }
 .personalized-text h1{
   color: var(--dark-purple);
+  font-size: 2em;
 }
 .personalized-text p{
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.6;
   color: var(--black-color);
+  text-align: justify;
 }
 
 .care-services-container {
@@ -509,6 +527,7 @@ a {
   column-gap: 20px;
   row-gap: 100px;
   margin: 100px auto 130px;
+  padding: 0 8%;
 }
 
 .care-service-card {
@@ -549,8 +568,9 @@ a {
   color: inherit;
 }
 .care-description {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--black-color);
+  line-height: 1.6;
 }
 .care-service-card:nth-child(odd) .care-icon-wrapper {
   border-color: #00bfff;
@@ -578,13 +598,14 @@ a {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
   width: 100%;
   margin: auto;
-  padding: 60px;
+  padding: 60px 8%;
+  gap: 20px;
 }
 
 .consultation-text {
   /* margin: auto; */
   /* width: 100px; */
-  max-width: 500px;
+  max-width: 600px;
 
 }
 
@@ -612,16 +633,19 @@ a {
 .responsive-form {
   display: flex;
   flex-direction: column;
+  min-width: 320px;
 }
 
 .form-row {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
+  max-width: 320px;
 }
 
 .form-group {
-  flex: 1;
+  /* flex: 1; */
+  max-width: 320px;
   display: flex;
   flex-direction: column;
 }
