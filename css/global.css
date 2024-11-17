@@ -25,7 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 8%;
+    padding: 10px 10%;
     width: 100%;
     border-bottom: 1px solid #f0eded;
     position: fixed;
@@ -58,7 +58,7 @@
     align-items: center;
     margin: auto;
     padding: 0px;
-    gap: 10px;
+    gap: 7px;
   }
   .logo img {
     width: 80px;
@@ -121,7 +121,7 @@
   .menu-icon {
     display: none !important;
   }
-  @media (max-width: 900px) {
+  @media (max-width: 990px) {
     .header{
         padding: 10px 0%;
     }
@@ -194,7 +194,7 @@
 
   .footer {
     background-color: #f1f1f1;
-    padding: 20px 8%;
+    padding: 20px 10%;
     font-size: 16px;
     color: #666;
     display: flex;
